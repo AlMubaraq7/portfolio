@@ -24,7 +24,7 @@ export default function home() {
           content="Mubaraq Momoh | Frontend Developer"
         />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://deverajc.com/" />
+        <meta property="og:url" content="https://zerosevenal.vercel.app" />
         <meta property="og:image" content={ogImage.src} />
         <meta
           property="og:description"
