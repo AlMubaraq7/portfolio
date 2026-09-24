@@ -1,40 +1,104 @@
 .hero {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  min-height: 80vh;
+
   margin-top: 4rem;
-  margin-bottom: 25rem;
-  padding: 4rem 2.5rem;
+  margin-bottom: 14rem;
+  padding: 6rem 2.5rem;
+
   @media (max-width: 980px) {
-    padding: 0 2rem;
+    min-height: auto;
+    padding: 8rem 2rem;
     margin-top: 1.5rem;
-    margin-bottom: 4.8rem;
+    margin-bottom: 6rem;
   }
+}
+
+.gridBg {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+
+  background-image: linear-gradient(
+      to right,
+      var(--grid-line) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
+  background-size: 2.8rem 2.8rem;
+
+  // fade the grid toward the edges so it reads as a subtle backdrop
+  -webkit-mask-image: radial-gradient(
+    ellipse 70% 70% at 50% 45%,
+    #000 45%,
+    transparent 100%
+  );
+  mask-image: radial-gradient(
+    ellipse 70% 70% at 50% 45%,
+    #000 45%,
+    transparent 100%
+  );
+}
+
+// soft ambient brand glow that trails the cursor
+.spotlight {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+// a brighter, brand-tinted copy of the grid, revealed only around the cursor
+// via an inline radial mask — makes the grid lines "light up" as you move
+.gridGlow {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+
+  background-image: linear-gradient(
+      to right,
+      rgba(153, 33, 33, 0.55) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(153, 33, 33, 0.55) 1px, transparent 1px);
+  background-size: 2.8rem 2.8rem;
 }
 
 .copyWrapper {
   position: relative;
   z-index: 10;
 
-  width: fit-content;
-  margin: 4.8rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  max-width: 900px;
+  margin: 0 auto;
+
+  text-align: center;
 }
 
 .title {
-  font-size: var(--text-2xl);
+  font-size: clamp(4.8rem, 10vw, 9.6rem);
   font-weight: 900;
-  line-height: 1.1;
+  line-height: 1.05;
 
   span {
     color: var(--brand);
   }
-
-  @media (max-width: 768px) {
-    font-size: var(--text-xl);
-  }
 }
 
 .subTitle {
-  font-size: var(--text-lg);
-  line-height: 1.1;
-  margin-top: 1.6rem;
+  font-size: clamp(2.4rem, 5vw, 3.6rem);
+  line-height: 1.2;
+  margin-top: 2rem;
   font-weight: 200;
 
   span {
@@ -44,53 +108,43 @@
 }
 
 .aboutCopy {
-  margin: 2.4rem 0;
-  max-width: 700px;
+  margin: 2.4rem auto 1.6rem;
+  max-width: 620px;
   font-weight: 200;
+  line-height: 1.6;
 }
 
-.profile {
-  margin: 2rem;
-  z-index: 10;
-  position: relative;
-  margin-right: 9rem;
-  border-radius: 50%;
-  outline: solid;
-  outline-width: 3px;
-  outline-color: var(--brand);
-  outline-offset: 6px;
-  transition: 0.4s;
-  object-fit: contain;
-  background-color: #fefefe;
-
-  &:hover {
-    outline: dotted;
-    outline-color: var(--brand);
-    outline-offset: 10px;
-    transform: scale(105%);
-  }
-}
-
-.heroGrid {
-  gap: 1.5rem;
+// numeric snapshot strip — big brand numbers with quiet labels
+.statsRow {
   display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3.2rem;
+  margin: 0.8rem 0 3.2rem;
 
-  @media (max-width: 980px) {
-    flex-direction: column-reverse;
-    align-items: start;
-    flex-wrap: wrap;
-
-    .profile {
-      height: 150px;
-      width: 150px;
-      margin-right: 0;
-      margin-bottom: -30px;
-      margin-top: 3rem;
-      margin-left: 1.5rem;
-    }
+  @media (max-width: 480px) {
+    gap: 2.4rem;
   }
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.statValue {
+  font-size: clamp(3.2rem, 6vw, 4.8rem);
+  font-weight: 900;
+  line-height: 1;
+  color: var(--brand);
+}
+
+.statLabel {
+  font-size: var(--text-xs);
+  font-weight: 200;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  opacity: 0.7;
 }

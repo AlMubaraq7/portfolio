@@ -1,4 +1,6 @@
 .home {
   display: grid;
-  grid-template-columns: 60px 1fr;
+  // minmax(0, 1fr) lets the content column shrink below its min-content
+  // instead of forcing horizontal overflow on narrow screens
+  grid-template-columns: 60px minmax(0, 1fr);
 }

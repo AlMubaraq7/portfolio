@@ -5,6 +5,7 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 import { AiFillGithub, AiOutlineExport } from "react-icons/ai";
 import { ProjectModal } from "./ProjectModal";
+import { TechStack } from "@/components/utils/TechStack";
 import styles from "./projects.module.scss";
 interface Props {
   modalContent: JSX.Element;
@@ -67,8 +68,7 @@ export const Project = ({
             width={1000}
             height={0}
             style={{
-              width: hovered ? "90% !important" : "85% !important",
-              rotate: hovered ? "2deg" : "0deg",
+              transform: hovered ? "scale(1.05)" : "scale(1)",
             }}
           />
           {/* <img
@@ -96,7 +96,7 @@ export const Project = ({
             </div>
           </Reveal>
           <Reveal>
-            <div className={styles.projectTech}>{tech.join(" - ")}</div>
+            <TechStack tech={tech} />
           </Reveal>
           <Reveal>
             <p className={styles.projectDescription}>

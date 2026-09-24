@@ -3,12 +3,20 @@
   font-size: 62.5%;
 
   --background: rgb(17, 17, 17);
-  --bg-opaque: rgb(17, 17, 17, 0.25);
+  --bg-opaque: rgba(17, 17, 17, 0.25);
   --background-light: rgb(35, 35, 35);
   --background-dark: rgb(8, 8, 8);
 
   --text: rgb(235, 236, 243);
   --brand: rgb(153, 33, 33);
+
+  /* semantic tokens — adapt per theme (overridden under [data-theme="light"]) */
+  --muted: rgba(235, 236, 243, 0.68);
+  --border: rgba(235, 236, 243, 0.3);
+  --border-subtle: rgba(235, 236, 243, 0.09);
+  --grid-line: rgba(235, 236, 243, 0.06);
+  --btn-bg: rgba(235, 236, 243, 0.08);
+  --shadow: rgba(0, 0, 0, 0.45);
 
   --text-xs: 1.6rem;
   --text-sm: 1.8rem;
@@ -16,6 +24,25 @@
   --text-lg: 3.6rem;
   --text-xl: 5.6rem;
   --text-2xl: 9.6rem;
+}
+
+/* Light theme — flipped by the toggle (persisted to localStorage as `theme`,
+   applied pre-paint by the inline script in _document.tsx). Brand red is
+   constant; only surfaces and text invert. */
+:root[data-theme="light"] {
+  --background: rgb(244, 243, 241);
+  --bg-opaque: rgba(244, 243, 241, 0.55);
+  --background-light: rgb(255, 255, 255);
+  --background-dark: rgb(233, 231, 227);
+
+  --text: rgb(26, 26, 28);
+
+  --muted: rgba(26, 26, 28, 0.62);
+  --border: rgba(26, 26, 28, 0.14);
+  --border-subtle: rgba(26, 26, 28, 0.09);
+  --grid-line: rgba(26, 26, 28, 0.05);
+  --btn-bg: rgba(26, 26, 28, 0.05);
+  --shadow: rgba(0, 0, 0, 0.14);
 }
 
 * {
@@ -39,6 +66,7 @@ body {
 body {
   color: var(--text);
   background: var(--background);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 a {

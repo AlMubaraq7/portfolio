@@ -1,31 +1,93 @@
-.experience {
-  margin-bottom: 2.4rem;
-  padding: 0 1.2rem 2.4rem;
-
-  border-bottom: 1px solid var(--background-light);
+.timeline {
+  position: relative;
+  margin-top: 1.2rem;
 }
 
-.heading {
+.item {
+  position: relative;
+  padding-left: 3.6rem;
+  padding-bottom: 3.6rem;
+
+  &:last-child {
+    padding-bottom: 0;
+  }
+
+  // connector line running down from this node toward the next
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0.6rem;
+    top: 0.6rem;
+    bottom: -0.2rem;
+    width: 2px;
+
+    background: linear-gradient(
+      to bottom,
+      var(--brand) 0%,
+      var(--background-light) 100%
+    );
+  }
+
+  // no dangling line below the final node when there are several
+  &:last-child:not(:only-child)::before {
+    display: none;
+  }
+
+  // node marker on the line
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0.4rem;
+
+    width: 1.4rem;
+    height: 1.4rem;
+
+    background: var(--background);
+    border: 2px solid var(--brand);
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(153, 33, 33, 0.12);
+  }
+}
+
+.itemHeader,
+.itemSubHeader {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  margin-bottom: 1.2rem;
+  gap: 1.2rem;
+  flex-wrap: wrap;
 }
 
-.title {
-  font-size: var(--text-md);
-  font-weight: bold;
+.itemHeader {
+  margin-bottom: 0.4rem;
+}
+
+.itemSubHeader {
+  margin-bottom: 1.6rem;
 }
 
 .position {
-  color: var(--brand);
+  font-size: var(--text-md);
   font-weight: bold;
+  color: var(--brand);
+}
+
+.company {
+  font-weight: bold;
+}
+
+.time,
+.location {
+  font-size: var(--text-xs);
+  font-weight: 200;
+  opacity: 0.7;
 }
 
 .description {
   margin-bottom: 1.8rem;
   font-weight: 200;
+  line-height: 1.6;
 }
 
 .tech {

@@ -1,34 +1,38 @@
 import { MyLinks } from "@/components/nav/components/MyLinks";
 import { Reveal } from "@/components/utils/Reveal";
-import { SectionHeader } from "@/components/utils/SectionHeader";
+import { CollapsibleSection } from "@/components/utils/CollapsibleSection";
 import styles from "./about.module.scss";
 import { Stats } from "./Stats";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
 export const About = () => {
   return (
-    <section id="about" className="section-wrapper">
-      <SectionHeader title="About" dir="l" />
+    <CollapsibleSection id="about" title="About" dir="l">
       <div className={styles.about}>
         <div>
           <Reveal>
             <p className={`${styles.aboutText} ${styles.highlightFirstLetter}`}>
-              Hey there! I&apos;m Mubaraq Momoh,{" "}
-              <strong>situated in Lagos state, Nigeria</strong> and I&apos;m a
-              Bachelor of Science in Computer Engineering.
+              I&apos;m Mubaraq Momoh &mdash; a software engineer and email
+              designer <strong>based in Lagos, Nigeria</strong>, with a B.Sc. in
+              Computer Engineering. I like building things that feel effortless
+              to use, and I tend to get a little obsessed with the details most
+              people never notice.
               <br />
-              <br />I have 1+ years experience working in web development, with
-              a focus on frontend development. I&apos;m a developer dedicated to
-              building clean, responsive and accessible user-intuitive
-              interfaces and applications.
+              <br />
+              For the past year I&apos;ve split my time between two things I
+              genuinely enjoy: writing front-end code and designing email
+              campaigns. The web side is about performance and interfaces that
+              stay out of your way; email is a stranger puzzle &mdash; making
+              one design hold up across dozens of clients that each break the
+              rules their own way &mdash; and I&apos;ve come to really enjoy
+              that.
             </p>
           </Reveal>
           <Reveal>
             <p className={styles.aboutText}>
-              I&apos;m always looking for new challenges and opportunities to
-              learn and grow as a developer. If you&apos;re interested in
-              working together or have any questions, please don&apos;t hesitate
-              to get in touch! 🔗
+              I&apos;m currently open to new work and always up for a problem
+              worth chewing on. If you&apos;ve got something in mind &mdash; or
+              just want to talk shop &mdash; my inbox is open. 🔗
             </p>
           </Reveal>
           <Reveal>
@@ -43,6 +47,6 @@ export const About = () => {
         </div>
         <Stats />
       </div>
-    </section>
+    </CollapsibleSection>
   );
 };

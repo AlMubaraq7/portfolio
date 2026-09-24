@@ -1,14 +1,16 @@
-import { SectionHeader } from "@/components/utils/SectionHeader";
+import { CollapsibleSection } from "@/components/utils/CollapsibleSection";
 import { ExperienceItem } from "./ExperienceItem";
+import styles from "./experience.module.scss";
 
 export const Experience = () => {
   return (
-    <section className="section-wrapper" id="experience">
-      <SectionHeader title="Experience" dir="l" />
-      {experience.map((item) => (
-        <ExperienceItem key={item.title} {...item} />
-      ))}
-    </section>
+    <CollapsibleSection id="experience" title="Experience" dir="l">
+      <div className={styles.timeline}>
+        {experience.map((item) => (
+          <ExperienceItem key={item.title} {...item} />
+        ))}
+      </div>
+    </CollapsibleSection>
   );
 };
 

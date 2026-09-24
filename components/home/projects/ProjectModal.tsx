@@ -5,6 +5,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import { AiFillGithub, AiOutlineExport } from "react-icons/ai";
 import { MdClose } from "react-icons/md";
+import { TechStack } from "@/components/utils/TechStack";
 import Image from "next/image";
 interface Props {
   isOpen: boolean;
@@ -64,7 +65,9 @@ export const ProjectModal = ({
         /> */}
         <div className={styles.modalContent}>
           <h4>{title}</h4>
-          <div className={styles.modalTech}>{tech.join(" - ")}</div>
+          <div className={styles.modalTech}>
+            <TechStack tech={tech} />
+          </div>
 
           <div className={styles.suppliedContent}>{modalContent}</div>
 

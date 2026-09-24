@@ -1,60 +1,92 @@
-import Image from "next/image";
-import { motion } from "framer-motion";
 import { StandardButton } from "@/components/buttons/StandardButton";
 import { Reveal } from "@/components/utils/Reveal";
-import { DotGrid } from "./DotGrid";
+import { Counter } from "@/components/utils/Counter";
 import styles from "./hero.module.scss";
-import Profile from "@/public/Mubaraq.jpg";
+import { MouseEvent } from "react";
+import { motion, useMotionValue, useMotionTemplate } from "framer-motion";
+
+// Quick, honest snapshot — tweak these numbers as the work grows.
+const stats = [
+  { value: 1, suffix: "+", label: "Years Experience" },
+  { value: 4, suffix: "+", label: "Web Projects" },
+  { value: 6, suffix: "+", label: "Email Campaigns" },
+];
 
 export const Hero = () => {
+  // Start off-screen so no glow shows until the cursor enters the hero.
+  const mouseX = useMotionValue(-1000);
+  const mouseY = useMotionValue(-1000);
+
+  const handleMouseMove = (e: MouseEvent<HTMLElement>) => {
+    const rect = e.currentTarget.getBoundingClientRect();
+    mouseX.set(e.clientX - rect.left);
+    mouseY.set(e.clientY - rect.top);
+  };
+
+  const spotlight = useMotionTemplate`radial-gradient(30rem 30rem at ${mouseX}px ${mouseY}px, rgba(153, 33, 33, 0.18), transparent 70%)`;
+  const glowMask = useMotionTemplate`radial-gradient(16rem 16rem at ${mouseX}px ${mouseY}px, #000 10%, transparent 75%)`;
+
   return (
-    <section className={`section-wrapper ${styles.hero}`}>
-      <div className={styles.heroGrid}>
-        <div className={styles.copyWrapper}>
-          <Reveal>
-            <h1 className={styles.title}>
-              Hi, I&apos;m Mubaraq<span>.</span>
-            </h1>
-          </Reveal>
-          <Reveal>
-            <h2 className={styles.subTitle}>
-              I&apos;m a <span>Frontend Developer</span>
-            </h2>
-          </Reveal>
-          <Reveal>
-            <p className={styles.aboutCopy}>
-              I have 1+ years experience working in web development, with a
-              focus on frontend development. I&apos;m a developer dedicated to
-              building clean, responsive and accessible user-intuitive
-              interfaces and applications.
-            </p>
-          </Reveal>
-          <Reveal>
-            <StandardButton
-              onClick={() =>
-                document.getElementById("contact")?.scrollIntoView()
-              }
-            >
-              Contact me
-            </StandardButton>
-          </Reveal>
-        </div>
-        <motion.div
-          initial={{ y: -30, opacity: 0 }}
-          animate={{ y: 0, opacity: 1 }}
-          transition={{ duration: 0.5, delay: 0.4 }}
-        >
-          <Image
-            className={styles.profile}
-            src={Profile}
-            priority
-            alt="Mubaraq Momoh | Frontend Developer"
-            width={350}
-            height={350}
-          />
-        </motion.div>
+    <section
+      className={`section-wrapper ${styles.hero}`}
+      onMouseMove={handleMouseMove}
+    >
+      <div className={styles.gridBg} aria-hidden="true" />
+      <motion.div
+        className={styles.spotlight}
+        style={{ background: spotlight }}
+        aria-hidden="true"
+      />
+      <motion.div
+        className={styles.gridGlow}
+        style={{ WebkitMaskImage: glowMask, maskImage: glowMask }}
+        aria-hidden="true"
+      />
+      <div className={styles.copyWrapper}>
+        <Reveal>
+          <h1 className={styles.title}>
+            Hi, I&apos;m Mubaraq<span>.</span>
+          </h1>
+        </Reveal>
+        <Reveal>
+          <h2 className={styles.subTitle}>
+            I&apos;m a <span>Software Engineer</span> &amp; an{" "}
+            <span>Email Designer</span>
+          </h2>
+        </Reveal>
+        <Reveal>
+          <p className={styles.aboutCopy}>
+            I build websites and design emails &mdash; two crafts that both come
+            down to sweating the small stuff. On the engineering side I turn
+            designs into fast, responsive interfaces; on the email side I build
+            campaigns that render cleanly across every inbox and actually earn
+            the click.
+          </p>
+        </Reveal>
+        <Reveal>
+          <ul className={styles.statsRow}>
+            {stats.map((stat) => (
+              <li key={stat.label} className={styles.stat}>
+                <Counter
+                  className={styles.statValue}
+                  to={stat.value}
+                  suffix={stat.suffix}
+                />
+                <span className={styles.statLabel}>{stat.label}</span>
+              </li>
+            ))}
+          </ul>
+        </Reveal>
+        <Reveal>
+          <StandardButton
+            onClick={() =>
+              document.getElementById("contact")?.scrollIntoView()
+            }
+          >
+            Contact me
+          </StandardButton>
+        </Reveal>
       </div>
-      <DotGrid />
     </section>
   );
 };

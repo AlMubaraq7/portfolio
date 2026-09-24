@@ -5,6 +5,7 @@ import styles from "./home.module.scss";
 import { Heading } from "../nav/Heading";
 import { About } from "./about/About";
 import { Projects } from "./projects/Projects";
+import { Emails } from "./emails/Emails";
 import { Experience } from "./experience/Experience";
 import { Contact } from "./contact/Contact";
 
@@ -18,6 +19,7 @@ export const Home = () => {
           <Hero />
           <About />
           <Projects />
+          <Emails />
           <Experience />
           <Contact />
           <div

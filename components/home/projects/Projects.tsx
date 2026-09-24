@@ -1,18 +1,16 @@
-import { SectionHeader } from "@/components/utils/SectionHeader";
+import { CollapsibleSection } from "@/components/utils/CollapsibleSection";
 import { Project } from "./Project";
 import styles from "./projects.module.scss";
 
 export const Projects = () => {
   return (
-    <section className="section-wrapper" id="projects">
-      <SectionHeader title="Projects" dir="r" />
-
+    <CollapsibleSection id="software" title="Software Engineering" dir="r">
       <div className={styles.projects}>
         {projects.map((project) => {
           return <Project key={project.title} {...project} />;
         })}
       </div>
-    </section>
+    </CollapsibleSection>
   );
 };
 

@@ -1,6 +1,7 @@
 import styles from "./stats.module.scss";
 import { AiFillCode, AiFillSmile } from "react-icons/ai";
 import { Reveal } from "@/components/utils/Reveal";
+import { TechStack } from "@/components/utils/TechStack";
 
 export const Stats = () => {
   return (
@@ -12,26 +13,30 @@ export const Stats = () => {
             <span>Confident With</span>
           </h4>
           <div className={styles.statGrid}>
-            <span className="chip">JavaScript</span>
-            <span className="chip">TypeScript</span>
-            <span className="chip">HTML</span>
-            <span className="chip">CSS</span>
-            <span className="chip">Tailwind CSS</span>
-            <span className="chip">React</span>
-            <span className="chip">NextJS</span>
-            <span className="chip">Styled Component</span>
-            <span className="chip">Redux</span>
-            <span className="chip">NodeJS</span>
-            <span className="chip">Express</span>
-            <span className="chip">SQL</span>
-            <span className="chip">MongoDB</span>
-            <span className="chip">Firebase</span>
-            <span className="chip">Astro</span>
-            <span className="chip">Framer Motion</span>
-            <span className="chip">GSAP</span>
-            <span className="chip">GraphQL</span>
-            <span className="chip">Stripe</span>
-            <span className="chip">Git</span>
+            <TechStack
+              tech={[
+                "JavaScript",
+                "TypeScript",
+                "HTML",
+                "CSS",
+                "Tailwind CSS",
+                "React",
+                "NextJS",
+                "Styled Component",
+                "Redux",
+                "NodeJS",
+                "Express",
+                "SQL",
+                "MongoDB",
+                "Firebase",
+                "Astro",
+                "Framer Motion",
+                "GSAP",
+                "GraphQL",
+                "Stripe",
+                "Git",
+              ]}
+            />
           </div>
         </div>
       </Reveal>
@@ -42,9 +47,7 @@ export const Stats = () => {
             <span>Actively Learning</span>
           </h4>
           <div className={styles.statGrid}>
-            <span className="chip">Java</span>
-            <span className="chip">Spring Boot</span>
-            <span className="chip">Figma</span>
+            <TechStack tech={["Java", "Spring Boot", "Figma"]} />
           </div>
         </div>
       </Reveal>
