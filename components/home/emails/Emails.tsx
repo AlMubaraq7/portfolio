@@ -43,25 +43,25 @@ const emailBrands = [
       {
         title: "Fragrance",
         description:
-          "An editorial-style reveal introducing the latest fragrance drop with lifestyle imagery.",
+          "An editorial-style reveal introducing the latest fragrance brands and products.",
         imgSrc: "/email-imgs/sephora-fragrance.png",
       },
       {
         title: "Insider",
         description:
-          "A festive gift-guide layout that segments picks by price to make shopping effortless.",
+          "A loyalty-focused campaign rewarding returning shoppers with Beauty Insider perks and points.",
         imgSrc: "/email-imgs/sephora-insider.png",
       },
       {
         title: "Hair",
         description:
-          "A festive gift-guide layout that segments picks by price to make shopping effortless.",
+          "A discovery-led edit spotlighting rising haircare brands, paired with a find-your-texture guide.",
         imgSrc: "/email-imgs/sephora-hair.png",
       },
       {
         title: "New In",
         description:
-          "A festive gift-guide layout that segments picks by price to make shopping effortless.",
+          "A clean, discovery-first roundup introducing the latest arrivals across the site.",
         imgSrc: "/email-imgs/sephora-new-in.png",
       },
     ],
@@ -78,6 +78,12 @@ const emailBrands = [
         description:
           "A high-impact product launch campaign introducing Nike’s next generation of performance footwear, combining bold editorial imagery, product storytelling, and movement-focused categories to drive discovery and shopping.",
         imgSrc: "/email-imgs/nike-move-different.png",
+      },
+      {
+        title: "Dri-FIT ADV Performance",
+        description:
+          "A high-impact, direct-to-consumer (DTC) email campaign designed for Nike Running to promote the high-performance Dri-FIT ADV product line. Mirroring Nike's signature athletic aesthetic.",
+        imgSrc: "/email-imgs/nike-dri-fit.png",
       },
     ],
   },
