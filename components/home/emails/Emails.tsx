@@ -85,6 +85,12 @@ const emailBrands = [
           "A high-impact, direct-to-consumer (DTC) email campaign designed for Nike Running to promote the high-performance Dri-FIT ADV product line. Mirroring Nike's signature athletic aesthetic.",
         imgSrc: "/email-imgs/nike-dri-fit.png",
       },
+      {
+        title: "Ready for What’s Next",
+        description:
+          "A seasonal Nike Studio Fleece campaign focused on everyday movement, comfort, and versatility. The campaign positions Studio Fleece as a layer that transitions seamlessly from training to everyday life, using energetic athlete photography, bold typography, and a minimal editorial layout.",
+        imgSrc: "/email-imgs/nike-ready-for-whats-next.png",
+      },
     ],
   },
 ];
