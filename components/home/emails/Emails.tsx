@@ -91,6 +91,12 @@ const emailBrands = [
           "A seasonal Nike Studio Fleece campaign focused on everyday movement, comfort, and versatility. The campaign positions Studio Fleece as a layer that transitions seamlessly from training to everyday life, using energetic athlete photography, bold typography, and a minimal editorial layout.",
         imgSrc: "/email-imgs/nike-ready-for-whats-next.png",
       },
+      {
+        title: "Ready for the Next Mile",
+        description:
+          "A performance-driven Nike Pegasus Plus 2 product-launch email built around speed, responsiveness, and lightweight movement.",
+        imgSrc: "/email-imgs/nike-ready-for-the-next-mile.png",
+      },
     ],
   },
 ];
