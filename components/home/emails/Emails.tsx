@@ -98,9 +98,9 @@ const emailBrands = [
         imgSrc: "/email-imgs/nike-ready-for-the-next-mile.png",
       },
       {
-        title: "Ready for the Next Mile",
+        title: "The Drop",
         description:
-          "A Nike product-launch email built around the Air Jordan 1 Low OG “Garden” release. The campaign creates anticipation with a close-up teaser, reveals the full sneaker, then uses its heritage story and distinctive details to build desire",
+          "A Nike product-launch email built around the Air Jordan 1 Low OG “Garden” release. The campaign creates anticipation with a close-up teaser, reveals the full sneaker, then uses its heritage story and distinctive details to build desire.",
         imgSrc: "/email-imgs/nike-the-drop.png",
       },
     ],
