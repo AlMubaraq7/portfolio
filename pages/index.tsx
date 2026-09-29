@@ -6,7 +6,7 @@ export default function home() {
   return (
     <>
       <Head>
-        <title>Mubaraq Momoh | Frontend Developer</title>
+        <title>Mubaraq Momoh | SWE and Email Designer</title>
         <link rel="shortcut icon" href="/favicon.png" />
         <meta
           name="description"
