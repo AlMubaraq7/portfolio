@@ -103,6 +103,12 @@ const emailBrands = [
           "A Nike product-launch email built around the Air Jordan 1 Low OG “Garden” release. The campaign creates anticipation with a close-up teaser, reveals the full sneaker, then uses its heritage story and distinctive details to build desire.",
         imgSrc: "/email-imgs/nike-the-drop.png",
       },
+      {
+        title: "Find Your Way Out",
+        description:
+          "A Nike ACG outdoor campaign built around exploration, movement, and getting outside. Instead of pushing one product, the email sells the experience of adventure.",
+        imgSrc: "/email-imgs/nike-the-drop.png",
+      },
     ],
   },
 ];
