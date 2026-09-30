@@ -107,7 +107,7 @@ const emailBrands = [
         title: "Find Your Way Out",
         description:
           "A Nike ACG outdoor campaign built around exploration, movement, and getting outside. Instead of pushing one product, the email sells the experience of adventure.",
-        imgSrc: "/email-imgs/nike-the-drop.png",
+        imgSrc: "/email-imgs/nike-find-your-way-out.png",
       },
     ],
   },
