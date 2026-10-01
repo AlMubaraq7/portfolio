@@ -109,6 +109,12 @@ const emailBrands = [
           "A Nike ACG outdoor campaign built around exploration, movement, and getting outside. Instead of pushing one product, the email sells the experience of adventure.",
         imgSrc: "/email-imgs/nike-find-your-way-out.png",
       },
+      {
+        title: "Make It Yours",
+        description:
+          "A Nike By You campaign that turns customization into the main experience. Instead of simply presenting a finished sneaker, the email invites the customer to imagine their own version: Choose the base, colors, details, and make something personal.",
+        imgSrc: "/email-imgs/nike-make-it-yours.png",
+      },
     ],
   },
 ];
