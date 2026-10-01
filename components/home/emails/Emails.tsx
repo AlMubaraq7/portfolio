@@ -115,6 +115,12 @@ const emailBrands = [
           "A Nike By You campaign that turns customization into the main experience. Instead of simply presenting a finished sneaker, the email invites the customer to imagine their own version: Choose the base, colors, details, and make something personal.",
         imgSrc: "/email-imgs/nike-make-it-yours.png",
       },
+      {
+        title: "Welcome to Nike",
+        description:
+          "A Nike membership welcome email that introduces the customer to the Nike ecosystem beyond shopping—personalized experiences, member benefits, products, and Nike's digital services.",
+        imgSrc: "/email-imgs/nike-welcome-to-nike.png",
+      },
     ],
   },
 ];
