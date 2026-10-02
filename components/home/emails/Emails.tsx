@@ -123,4 +123,19 @@ const emailBrands = [
       },
     ],
   },
+  {
+    brand: "Apple",
+    coverImg: "/email-imgs/apple-cover.png",
+    description:
+      "Product launches and feature-focused emails for Apple built around minimal layouts, premium product imagery, and clear, focused calls to action.",
+    link: "",
+    campaigns: [
+      {
+        title: "Pro, Redefined",
+        description:
+          "An iPhone 18 Pro product-launch email showcasing its new design, four finishes, pro-level camera system, performance, and Apple Intelligence. The campaign uses Apple’s minimalist visual language, large product imagery, generous whitespace, and concise feature-led sections to create a premium launch experience.",
+        imgSrc: "/email-imgs/apple-pro-redefined.png",
+      },
+    ],
+  },
 ];
