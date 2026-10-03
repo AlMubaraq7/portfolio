@@ -136,6 +136,12 @@ const emailBrands = [
           "An iPhone 18 Pro product-launch email showcasing its new design, four finishes, pro-level camera system, performance, and Apple Intelligence. The campaign uses Apple’s minimalist visual language, large product imagery, generous whitespace, and concise feature-led sections to create a premium launch experience.",
         imgSrc: "/email-imgs/apple-pro-redefined.png",
       },
+      {
+        title: "More Personal. More Powerful.",
+        description:
+          "An Apple Intelligence email introducing a more capable Siri through everyday use cases, highlighting personal context, onscreen awareness, and systemwide actions. The campaign uses soft gradients, minimal layouts, and concise feature-led sections to communicate a more natural and helpful AI experience.",
+        imgSrc: "/email-imgs/apple-apple-intelligence.png",
+      },
     ],
   },
 ];
