@@ -142,6 +142,12 @@ const emailBrands = [
           "An Apple Intelligence email introducing a more capable Siri through everyday use cases, highlighting personal context, onscreen awareness, and systemwide actions. The campaign uses soft gradients, minimal layouts, and concise feature-led sections to communicate a more natural and helpful AI experience.",
         imgSrc: "/email-imgs/apple-apple-intelligence.png",
       },
+      {
+        title: "Hear More. Carry Less.",
+        description:
+          "An AirPods product-launch email focused on effortless listening, lightweight design, and seamless integration across Apple devices. The campaign uses clean product imagery, generous whitespace, and concise benefit-led sections to create a simple, premium launch experience.",
+        imgSrc: "/email-imgs/apple-airpods.png",
+      },
     ],
   },
 ];
