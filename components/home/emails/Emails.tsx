@@ -148,6 +148,12 @@ const emailBrands = [
           "An AirPods product-launch email focused on effortless listening, lightweight design, and seamless integration across Apple devices. The campaign uses clean product imagery, generous whitespace, and concise benefit-led sections to create a simple, premium launch experience.",
         imgSrc: "/email-imgs/apple-airpods.png",
       },
+      {
+        title: "All Works Together",
+        description:
+          "An Apple ecosystem email showcasing how iPhone, Mac, Apple Watch, and AirPods work together seamlessly throughout the day. The campaign uses a day-in-the-life narrative, connected product imagery, and concise benefit-led sections to highlight continuity, convenience, and a unified Apple experience.",
+        imgSrc: "/email-imgs/apple-all-works-together.png",
+      },
     ],
   },
 ];
