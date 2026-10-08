@@ -154,6 +154,12 @@ const emailBrands = [
           "An Apple ecosystem email showcasing how iPhone, Mac, Apple Watch, and AirPods work together seamlessly throughout the day. The campaign uses a day-in-the-life narrative, connected product imagery, and concise benefit-led sections to highlight continuity, convenience, and a unified Apple experience.",
         imgSrc: "/email-imgs/apple-all-works-together.png",
       },
+      {
+        title: "Small. Serious Power",
+        description:
+          "A Mac-focused product discovery email showcasing the power and versatility of Mac mini and Mac Studio. The campaign uses bold product imagery, concise performance-focused messaging, and a clean comparison-style layout to help readers find the right Mac for their workflow.",
+        imgSrc: "/email-imgs/apple-small-serious-power.png",
+      },
     ],
   },
 ];
