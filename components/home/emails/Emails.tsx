@@ -162,4 +162,19 @@ const emailBrands = [
       },
     ],
   },
+  {
+    brand: "Airbnb",
+    coverImg: "/email-imgs/airbnb-cover.png",
+    description:
+      "Travel inspiration and experience-focused emails built around immersive destination photography, welcoming copy, and simple calls to action that inspire people to discover new places.",
+    link: "",
+    campaigns: [
+      {
+        title: "Your Next Escape",
+        description:
+          "A travel inspiration email encouraging readers to discover their next getaway. The campaign combines immersive destination photography, warm messaging, and curated travel experiences to evoke a sense of adventure and inspire readers to explore their next stay.",
+        imgSrc: "/email-imgs/airbnb-your-next-escape.png",
+      },
+    ],
+  },
 ];
