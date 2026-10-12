@@ -175,6 +175,12 @@ const emailBrands = [
           "A travel inspiration email encouraging readers to discover their next getaway. The campaign combines immersive destination photography, warm messaging, and curated travel experiences to evoke a sense of adventure and inspire readers to explore their next stay.",
         imgSrc: "/email-imgs/airbnb-your-next-escape.png",
       },
+      {
+        title: "The Weekend Is Calling",
+        description:
+          "A weekend getaway promotional email encouraging readers to take a break from their routine and explore somewhere new. The campaign combines warm destination photography, relatable storytelling, and benefit-focused messaging to make a short escape feel effortless and worth looking forward to.",
+        imgSrc: "/email-imgs/airbnb-the-weekend-is-calling.png",
+      },
     ],
   },
 ];
