@@ -181,18 +181,18 @@ const emailBrands = [
           "A weekend getaway promotional email encouraging readers to take a break from their routine and explore somewhere new. The campaign combines warm destination photography, relatable storytelling, and benefit-focused messaging to make a short escape feel effortless and worth looking forward to.",
         imgSrc: "/email-imgs/airbnb-the-weekend-is-calling.png",
       },
-       {
+      {
         title: "Stay Somewhere Different",
         description:
           "An accommodation discovery email showcasing unique holiday homes, distinctive architecture, and memorable places to stay. The campaign combines immersive property photography, welcoming copy, and benefit-focused messaging to inspire readers to explore stays that make their trips more memorable.",
         imgSrc: "/email-imgs/airbnb-stay-somewhere-different.png",
       },
-        {
+      {
         title: "More Than a Stay",
         description:
           "An experiences-focused email campaign encouraging travelers to discover local food, creative workshops, and cultural activities beyond their accommodation. The design combines authentic lifestyle photography, editorial layouts, and warm messaging to showcase how meaningful experiences can make a trip more memorable.",
-        imgSrc: "/email-imgs/airbnb-stay-somewhere-different.png",
-      }
+        imgSrc: "/email-imgs/airbnb-more-than-a-stay.png",
+      },
     ],
   },
 ];
