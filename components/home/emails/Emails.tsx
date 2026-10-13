@@ -187,6 +187,12 @@ const emailBrands = [
           "An accommodation discovery email showcasing unique holiday homes, distinctive architecture, and memorable places to stay. The campaign combines immersive property photography, welcoming copy, and benefit-focused messaging to inspire readers to explore stays that make their trips more memorable.",
         imgSrc: "/email-imgs/airbnb-stay-somewhere-different.png",
       },
+        {
+        title: "More Than a Stay",
+        description:
+          "An experiences-focused email campaign encouraging travelers to discover local food, creative workshops, and cultural activities beyond their accommodation. The design combines authentic lifestyle photography, editorial layouts, and warm messaging to showcase how meaningful experiences can make a trip more memorable.",
+        imgSrc: "/email-imgs/airbnb-stay-somewhere-different.png",
+      }
     ],
   },
 ];
