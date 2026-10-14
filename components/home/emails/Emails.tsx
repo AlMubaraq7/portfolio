@@ -201,4 +201,19 @@ const emailBrands = [
       },
     ],
   },
+  {
+    brand: "IKEA",
+    coverImg: "/email-imgs/ikea-cover.png",
+    description:
+      "Home inspiration and lifestyle emails focused on functional furniture, affordable home essentials, and Scandinavian interior design. Each campaign combines warm lifestyle photography, practical styling ideas, and clear calls to action to inspire people to create a more comfortable and personalized home.",
+    link: "",
+    campaigns: [
+      {
+        title: "Make Room for Better",
+        description:
+          "A home inspiration email showcasing simple ways to make everyday living spaces more comfortable, functional, and personal. The campaign combines Scandinavian interior photography, practical home styling ideas, and concise benefit-driven copy to encourage readers to refresh their spaces with thoughtful design.",
+        imgSrc: "/email-imgs/ikea-make-room-for-better.png",
+      },
+    ],
+  },
 ];
