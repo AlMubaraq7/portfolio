@@ -193,6 +193,12 @@ const emailBrands = [
           "An experiences-focused email campaign encouraging travelers to discover local food, creative workshops, and cultural activities beyond their accommodation. The design combines authentic lifestyle photography, editorial layouts, and warm messaging to showcase how meaningful experiences can make a trip more memorable.",
         imgSrc: "/email-imgs/airbnb-more-than-a-stay.png",
       },
+      {
+        title: "Places You'll Never Forget",
+        description:
+          "A destination discovery email inspiring travelers to explore memorable places around the world. The campaign combines immersive destination photography, editorial storytelling, and curated travel inspiration to showcase coastal escapes, vibrant cities, and breathtaking landscapes that make every journey unique.",
+        imgSrc: "/email-imgs/airbnb-places-youll-never-forget.png",
+      },
     ],
   },
 ];
