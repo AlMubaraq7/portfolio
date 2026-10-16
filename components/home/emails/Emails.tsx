@@ -220,6 +220,12 @@ const emailBrands = [
           "An editorial home-inspiration email that introduces readers to different interior design styles, from Scandinavian simplicity to boho eclecticism. The campaign combines immersive interior photography, concise styling advice, and a clean, vertically stacked layout to encourage readers to discover ideas and create a home that reflects their personality.",
         imgSrc: "/email-imgs/ikea-find-your-home-style.png",
       },
+      {
+        title: "Meet the New Collection",
+        description:
+          "A product-launch email concept inspired by IKEA PS 2026, showcasing playful functionality through expressive product photography, concise design storytelling, and a clear visual hierarchy. The layout introduces standout pieces before guiding readers toward exploring the collection.",
+        imgSrc: "/email-imgs/ikea-meet-the-new-collection.png",
+      },
     ],
   },
 ];
