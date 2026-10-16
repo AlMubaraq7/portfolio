@@ -214,6 +214,12 @@ const emailBrands = [
           "A home inspiration email showcasing simple ways to make everyday living spaces more comfortable, functional, and personal. The campaign combines Scandinavian interior photography, practical home styling ideas, and concise benefit-driven copy to encourage readers to refresh their spaces with thoughtful design.",
         imgSrc: "/email-imgs/ikea-make-room-for-better.png",
       },
+      {
+        title: "Find Your Home Style",
+        description:
+          "An editorial home-inspiration email that introduces readers to different interior design styles, from Scandinavian simplicity to boho eclecticism. The campaign combines immersive interior photography, concise styling advice, and a clean, vertically stacked layout to encourage readers to discover ideas and create a home that reflects their personality.",
+        imgSrc: "/email-imgs/ikea-find-your-home-style.png",
+      },
     ],
   },
 ];
