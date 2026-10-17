@@ -226,6 +226,12 @@ const emailBrands = [
           "A product-launch email concept inspired by IKEA PS 2026, showcasing playful functionality through expressive product photography, concise design storytelling, and a clear visual hierarchy. The layout introduces standout pieces before guiding readers toward exploring the collection.",
         imgSrc: "/email-imgs/ikea-meet-the-new-collection.png",
       },
+      {
+        title: "More for IKEA Family Members",
+        description:
+          "A promotional loyalty email concept highlighting IKEA Family membership benefits, including special product prices, exclusive offers, and home inspiration.",
+        imgSrc: "/email-imgs/ikea-more-for-ikea-family-members.png",
+      },
     ],
   },
 ];
