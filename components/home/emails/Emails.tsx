@@ -232,6 +232,12 @@ const emailBrands = [
           "A promotional loyalty email concept highlighting IKEA Family membership benefits, including special product prices, exclusive offers, and home inspiration.",
         imgSrc: "/email-imgs/ikea-more-for-ikea-family-members.png",
       },
+      {
+        title: "Welcome to IKEA Family",
+        description:
+          "A welcome email concept introducing new IKEA Family members to their membership benefits. The design combines warm home photography, concise benefit cards, and a simple getting-started journey to create a friendly onboarding experience that encourages members to explore offers, discover inspiration, and make the most of their membership.",
+        imgSrc: "/email-imgs/ikea-welcome-to-ikea-family.png",
+      },
     ],
   },
 ];
