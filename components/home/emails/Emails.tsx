@@ -240,4 +240,19 @@ const emailBrands = [
       },
     ],
   },
+  {
+    brand: "Adidas",
+    coverImg: "/email-imgs/adidas-cover.png",
+    description:
+      "Sportswear and lifestyle emails focused on footwear, apparel, product launches, and exclusive offers. Each campaign combines bold product imagery, energetic visuals, and clear calls to action to showcase new arrivals, promote collections, and connect customers with the latest adidas styles.",
+    link: "",
+    campaigns: [
+      {
+        title: "New Arrivals",
+        description:
+          "An Adidas new-arrivals email concept designed to showcase fresh footwear and apparel through bold product imagery, concise editorial copy, and clear shopping paths.",
+        imgSrc: "/email-imgs/adidas-new-arrivals.png",
+      },
+    ],
+  },
 ];
