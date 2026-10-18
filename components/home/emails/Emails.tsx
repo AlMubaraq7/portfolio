@@ -253,6 +253,12 @@ const emailBrands = [
           "An Adidas new-arrivals email concept designed to showcase fresh footwear and apparel through bold product imagery, concise editorial copy, and clear shopping paths.",
         imgSrc: "/email-imgs/adidas-new-arrivals.png",
       },
+      {
+        title: "Meet the Adistar Jellyfish",
+        description:
+          "A product-launch email concept inspired by Adidas's Adistar Jellyfish sneaker. The design uses bold product photography, oversized typography, and concise product storytelling to introduce a distinctive footwear silhouette and guide readers toward exploring the product.",
+        imgSrc: "/email-imgs/adidas-meet-the-adistar-jellyfish.png",
+      },
     ],
   },
 ];
