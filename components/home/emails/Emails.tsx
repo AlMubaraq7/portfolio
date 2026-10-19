@@ -259,6 +259,12 @@ const emailBrands = [
           "A product-launch email concept inspired by Adidas's Adistar Jellyfish sneaker. The design uses bold product photography, oversized typography, and concise product storytelling to introduce a distinctive footwear silhouette and guide readers toward exploring the product.",
         imgSrc: "/email-imgs/adidas-meet-the-adistar-jellyfish.png",
       },
+      {
+        title: "The Seasonal Sale",
+        description:
+          "A promotional email concept inspired by Adidas's official sale collection, showcasing discounted footwear and apparel through bold typography, product-focused imagery, and clear shopping paths. The design emphasizes promotional hierarchy and curated product sections to encourage browsing without overwhelming the reader.",
+        imgSrc: "/email-imgs/adidas-seasonal-sale.png",
+      },
     ],
   },
 ];
