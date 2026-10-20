@@ -203,7 +203,7 @@ const emailBrands = [
   },
   {
     brand: "IKEA",
-    coverImg: "/email-imgs/ikea-cover.png",
+    coverImg: "/email-imgs/ikea-cover.webp",
     description:
       "Home inspiration and lifestyle emails focused on functional furniture, affordable home essentials, and Scandinavian interior design. Each campaign combines warm lifestyle photography, practical styling ideas, and clear calls to action to inspire people to create a more comfortable and personalized home.",
     link: "",
@@ -212,25 +212,25 @@ const emailBrands = [
         title: "Make Room for Better",
         description:
           "A home inspiration email showcasing simple ways to make everyday living spaces more comfortable, functional, and personal. The campaign combines Scandinavian interior photography, practical home styling ideas, and concise benefit-driven copy to encourage readers to refresh their spaces with thoughtful design.",
-        imgSrc: "/email-imgs/ikea-make-room-for-better.png",
+        imgSrc: "/email-imgs/ikea-make-room-for-better.webp",
       },
       {
         title: "Find Your Home Style",
         description:
           "An editorial home-inspiration email that introduces readers to different interior design styles, from Scandinavian simplicity to boho eclecticism. The campaign combines immersive interior photography, concise styling advice, and a clean, vertically stacked layout to encourage readers to discover ideas and create a home that reflects their personality.",
-        imgSrc: "/email-imgs/ikea-find-your-home-style.png",
+        imgSrc: "/email-imgs/ikea-find-your-home-style.webp",
       },
       {
         title: "Meet the New Collection",
         description:
           "A product-launch email concept inspired by IKEA PS 2026, showcasing playful functionality through expressive product photography, concise design storytelling, and a clear visual hierarchy. The layout introduces standout pieces before guiding readers toward exploring the collection.",
-        imgSrc: "/email-imgs/ikea-meet-the-new-collection.png",
+        imgSrc: "/email-imgs/ikea-meet-the-new-collection.webp",
       },
       {
         title: "More for IKEA Family Members",
         description:
           "A promotional loyalty email concept highlighting IKEA Family membership benefits, including special product prices, exclusive offers, and home inspiration.",
-        imgSrc: "/email-imgs/ikea-more-for-ikea-family-members.png",
+        imgSrc: "/email-imgs/ikea-more-for-ikea-family-members.webp",
       },
       {
         title: "Welcome to IKEA Family",
@@ -269,7 +269,7 @@ const emailBrands = [
         title: "Made for the Streets",
         description:
           "A lifestyle editorial email concept inspired by adidas Originals, combining heritage footwear, signature 3-Stripes apparel, and street-style photography. The design uses bold typography, contrasting content sections, and product-focused storytelling to showcase everyday style without relying on discounts or promotional messaging.",
-        imgSrc: "/email-imgs/adidas-seasonal-sale.webp",
+        imgSrc: "/email-imgs/adidas-made-for-the-streets.webp",
       },
     ],
   },
