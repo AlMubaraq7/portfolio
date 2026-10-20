@@ -251,25 +251,25 @@ const emailBrands = [
         title: "New Arrivals",
         description:
           "An Adidas new-arrivals email concept designed to showcase fresh footwear and apparel through bold product imagery, concise editorial copy, and clear shopping paths.",
-        imgSrc: "/email-imgs/adidas-new-arrivals.png",
+        imgSrc: "/email-imgs/adidas-new-arrivals.webp",
       },
       {
         title: "Meet the Adistar Jellyfish",
         description:
           "A product-launch email concept inspired by Adidas's Adistar Jellyfish sneaker. The design uses bold product photography, oversized typography, and concise product storytelling to introduce a distinctive footwear silhouette and guide readers toward exploring the product.",
-        imgSrc: "/email-imgs/adidas-meet-the-adistar-jellyfish.png",
+        imgSrc: "/email-imgs/adidas-meet-the-adistar-jellyfish.webp",
       },
       {
         title: "The Seasonal Sale",
         description:
           "A promotional email concept inspired by Adidas's official sale collection, showcasing discounted footwear and apparel through bold typography, product-focused imagery, and clear shopping paths. The design emphasizes promotional hierarchy and curated product sections to encourage browsing without overwhelming the reader.",
-        imgSrc: "/email-imgs/adidas-seasonal-sale.png",
+        imgSrc: "/email-imgs/adidas-seasonal-sale.webp",
       },
       {
         title: "Made for the Streets",
         description:
           "A lifestyle editorial email concept inspired by adidas Originals, combining heritage footwear, signature 3-Stripes apparel, and street-style photography. The design uses bold typography, contrasting content sections, and product-focused storytelling to showcase everyday style without relying on discounts or promotional messaging.",
-        imgSrc: "/email-imgs/adidas-seasonal-sale.png",
+        imgSrc: "/email-imgs/adidas-seasonal-sale.webp",
       },
     ],
   },
