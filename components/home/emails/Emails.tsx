@@ -265,6 +265,12 @@ const emailBrands = [
           "A promotional email concept inspired by Adidas's official sale collection, showcasing discounted footwear and apparel through bold typography, product-focused imagery, and clear shopping paths. The design emphasizes promotional hierarchy and curated product sections to encourage browsing without overwhelming the reader.",
         imgSrc: "/email-imgs/adidas-seasonal-sale.png",
       },
+      {
+        title: "Made for the Streets",
+        description:
+          "A lifestyle editorial email concept inspired by adidas Originals, combining heritage footwear, signature 3-Stripes apparel, and street-style photography. The design uses bold typography, contrasting content sections, and product-focused storytelling to showcase everyday style without relying on discounts or promotional messaging.",
+        imgSrc: "/email-imgs/adidas-seasonal-sale.png",
+      },
     ],
   },
 ];
