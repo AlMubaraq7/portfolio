@@ -268,7 +268,7 @@ const emailBrands = [
       {
         title: "Made for the Streets",
         description:
-          "A lifestyle editorial email concept inspired by adidas Originals, combining heritage footwear, signature 3-Stripes apparel, and street-style photography. The design uses bold typography, contrasting content sections, and product-focused storytelling to showcase everyday style without relying on discounts or promotional messaging.",
+          "A lifestyle editorial email concept inspired by adidas Originals, combining heritage footwear, signature 3-Stripes apparel, and street-style photography.",
         imgSrc: "/email-imgs/adidas-made-for-the-streets.webp",
       },
       {
