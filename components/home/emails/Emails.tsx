@@ -271,6 +271,12 @@ const emailBrands = [
           "A lifestyle editorial email concept inspired by adidas Originals, combining heritage footwear, signature 3-Stripes apparel, and street-style photography. The design uses bold typography, contrasting content sections, and product-focused storytelling to showcase everyday style without relying on discounts or promotional messaging.",
         imgSrc: "/email-imgs/adidas-made-for-the-streets.webp",
       },
+      {
+        title: "Join the adiClub",
+        description:
+          "A membership-focused email concept inspired by adidas adiClub, showcasing its points system, membership levels, and rewards through bold typography, lifestyle photography, and clearly structured benefit sections.",
+        imgSrc: "/email-imgs/adidas-adiclub.webp",
+      },
     ],
   },
 ];
