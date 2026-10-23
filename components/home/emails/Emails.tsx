@@ -262,7 +262,7 @@ const emailBrands = [
       {
         title: "The Seasonal Sale",
         description:
-          "A promotional email concept inspired by Adidas's official sale collection, showcasing discounted footwear and apparel through bold typography, product-focused imagery, and clear shopping paths. The design emphasizes promotional hierarchy and curated product sections to encourage browsing without overwhelming the reader.",
+          "A promotional email concept inspired by Adidas's official sale collection.",
         imgSrc: "/email-imgs/adidas-seasonal-sale.webp",
       },
       {
@@ -271,12 +271,17 @@ const emailBrands = [
           "A lifestyle editorial email concept inspired by adidas Originals, combining heritage footwear, signature 3-Stripes apparel, and street-style photography.",
         imgSrc: "/email-imgs/adidas-made-for-the-streets.webp",
       },
-
       {
         title: "Join the adiClub",
         description:
           "A membership-focused email concept inspired by adidas adiClub, showcasing its points system, membership levels, and rewards through bold typography, lifestyle photography, and clearly structured benefit sections.",
         imgSrc: "/email-imgs/adidas-join-the-adiclub.webp",
+      },
+      {
+        title: "Still thinking it over",
+        description:
+          "An abandoned-cart email concept designed to bring shoppers back to their unfinished purchases.",
+        imgSrc: "/email-imgs/adidas-still-thinking-it-over.webp",
       },
     ],
   },
