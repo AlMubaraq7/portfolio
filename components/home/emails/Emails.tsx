@@ -271,6 +271,7 @@ const emailBrands = [
           "A lifestyle editorial email concept inspired by adidas Originals, combining heritage footwear, signature 3-Stripes apparel, and street-style photography.",
         imgSrc: "/email-imgs/adidas-made-for-the-streets.webp",
       },
+
       {
         title: "Join the adiClub",
         description:
