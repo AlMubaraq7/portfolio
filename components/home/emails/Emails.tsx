@@ -32,37 +32,37 @@ const emailBrands = [
         title: "Skincare",
         description:
           "A routine-focused launch email pairing hero products with a clear, single call to action.",
-        imgSrc: "/email-imgs/sephora-skincare.png",
+        imgSrc: "/email-imgs/sephora-skincare.webp",
       },
       {
         title: "Makeup",
         description:
           "A bold, high-contrast promo email built to drive urgency during the seasonal sale.",
-        imgSrc: "/email-imgs/sephora-makeup.png",
+        imgSrc: "/email-imgs/sephora-makeup.webp",
       },
       {
         title: "Fragrance",
         description:
           "An editorial-style reveal introducing the latest fragrance brands and products.",
-        imgSrc: "/email-imgs/sephora-fragrance.png",
+        imgSrc: "/email-imgs/sephora-fragrance.webp",
       },
       {
         title: "Insider",
         description:
           "A loyalty-focused campaign rewarding returning shoppers with Beauty Insider perks and points.",
-        imgSrc: "/email-imgs/sephora-insider.png",
+        imgSrc: "/email-imgs/sephora-insider.webp",
       },
       {
         title: "Hair",
         description:
           "A discovery-led edit spotlighting rising haircare brands, paired with a find-your-texture guide.",
-        imgSrc: "/email-imgs/sephora-hair.png",
+        imgSrc: "/email-imgs/sephora-hair.webp",
       },
       {
         title: "New In",
         description:
           "A clean, discovery-first roundup introducing the latest arrivals across the site.",
-        imgSrc: "/email-imgs/sephora-new-in.png",
+        imgSrc: "/email-imgs/sephora-new-in.webp",
       },
     ],
   },
@@ -77,7 +77,7 @@ const emailBrands = [
         title: "Move Different",
         description:
           "A high-impact product launch campaign introducing Nike’s next generation of performance footwear, combining bold editorial imagery, product storytelling, and movement-focused categories to drive discovery and shopping.",
-        imgSrc: "/email-imgs/nike-move-different.png",
+        imgSrc: "/email-imgs/nike-move-different.webp",
       },
       {
         title: "Dri-FIT ADV Performance",
@@ -101,13 +101,13 @@ const emailBrands = [
         title: "The Drop",
         description:
           "A Nike product-launch email built around the Air Jordan 1 Low OG “Garden” release. The campaign creates anticipation with a close-up teaser, reveals the full sneaker, then uses its heritage story and distinctive details to build desire.",
-        imgSrc: "/email-imgs/nike-the-drop.png",
+        imgSrc: "/email-imgs/nike-the-drop.webp",
       },
       {
         title: "Find Your Way Out",
         description:
           "A Nike ACG outdoor campaign built around exploration, movement, and getting outside. Instead of pushing one product, the email sells the experience of adventure.",
-        imgSrc: "/email-imgs/nike-find-your-way-out.png",
+        imgSrc: "/email-imgs/nike-find-your-way-out.webp",
       },
       {
         title: "Make It Yours",
@@ -275,7 +275,7 @@ const emailBrands = [
         title: "Join the adiClub",
         description:
           "A membership-focused email concept inspired by adidas adiClub, showcasing its points system, membership levels, and rewards through bold typography, lifestyle photography, and clearly structured benefit sections.",
-        imgSrc: "/email-imgs/adidas-adiclub.webp",
+        imgSrc: "/email-imgs/adidas-join-the-adiclub.webp",
       },
     ],
   },
