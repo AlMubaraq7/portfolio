@@ -83,13 +83,13 @@ const emailBrands = [
         title: "Dri-FIT ADV Performance",
         description:
           "A high-impact, direct-to-consumer (DTC) email campaign designed for Nike Running to promote the high-performance Dri-FIT ADV product line. Mirroring Nike's signature athletic aesthetic.",
-        imgSrc: "/email-imgs/nike-dri-fit.png",
+        imgSrc: "/email-imgs/nike-dri-fit.webp",
       },
       {
         title: "Ready for What’s Next",
         description:
           "A seasonal Nike Studio Fleece campaign focused on everyday movement, comfort, and versatility. The campaign positions Studio Fleece as a layer that transitions seamlessly from training to everyday life, using energetic athlete photography, bold typography, and a minimal editorial layout.",
-        imgSrc: "/email-imgs/nike-ready-for-whats-next.png",
+        imgSrc: "/email-imgs/nike-ready-for-whats-next.webp",
       },
       {
         title: "Ready for the Next Mile",
@@ -113,7 +113,7 @@ const emailBrands = [
         title: "Make It Yours",
         description:
           "A Nike By You campaign that turns customization into the main experience. Instead of simply presenting a finished sneaker, the email invites the customer to imagine their own version: Choose the base, colors, details, and make something personal.",
-        imgSrc: "/email-imgs/nike-make-it-yours.png",
+        imgSrc: "/email-imgs/nike-make-it-yours.webp",
       },
       {
         title: "Welcome to Nike",
@@ -134,31 +134,31 @@ const emailBrands = [
         title: "Pro, Redefined",
         description:
           "An iPhone 18 Pro product-launch email showcasing its new design, four finishes, pro-level camera system, performance, and Apple Intelligence. The campaign uses Apple’s minimalist visual language, large product imagery, generous whitespace, and concise feature-led sections to create a premium launch experience.",
-        imgSrc: "/email-imgs/apple-pro-redefined.png",
+        imgSrc: "/email-imgs/apple-pro-redefined.webp",
       },
       {
         title: "More Personal. More Powerful.",
         description:
           "An Apple Intelligence email introducing a more capable Siri through everyday use cases, highlighting personal context, onscreen awareness, and systemwide actions. The campaign uses soft gradients, minimal layouts, and concise feature-led sections to communicate a more natural and helpful AI experience.",
-        imgSrc: "/email-imgs/apple-apple-intelligence.png",
+        imgSrc: "/email-imgs/apple-apple-intelligence.webp",
       },
       {
         title: "Hear More. Carry Less.",
         description:
           "An AirPods product-launch email focused on effortless listening, lightweight design, and seamless integration across Apple devices. The campaign uses clean product imagery, generous whitespace, and concise benefit-led sections to create a simple, premium launch experience.",
-        imgSrc: "/email-imgs/apple-airpods.png",
+        imgSrc: "/email-imgs/apple-airpods.webp",
       },
       {
         title: "All Works Together",
         description:
           "An Apple ecosystem email showcasing how iPhone, Mac, Apple Watch, and AirPods work together seamlessly throughout the day. The campaign uses a day-in-the-life narrative, connected product imagery, and concise benefit-led sections to highlight continuity, convenience, and a unified Apple experience.",
-        imgSrc: "/email-imgs/apple-all-works-together.png",
+        imgSrc: "/email-imgs/apple-all-works-together.webp",
       },
       {
         title: "Small. Serious Power",
         description:
           "A Mac-focused product discovery email showcasing the power and versatility of Mac mini and Mac Studio. The campaign uses bold product imagery, concise performance-focused messaging, and a clean comparison-style layout to help readers find the right Mac for their workflow.",
-        imgSrc: "/email-imgs/apple-small-serious-power.png",
+        imgSrc: "/email-imgs/apple-small-serious-power.webp",
       },
     ],
   },
@@ -236,7 +236,7 @@ const emailBrands = [
         title: "Welcome to IKEA Family",
         description:
           "A welcome email concept introducing new IKEA Family members to their membership benefits. The design combines warm home photography, concise benefit cards, and a simple getting-started journey to create a friendly onboarding experience that encourages members to explore offers, discover inspiration, and make the most of their membership.",
-        imgSrc: "/email-imgs/ikea-welcome-to-ikea-family.png",
+        imgSrc: "/email-imgs/ikea-welcome-to-ikea-family.webp",
       },
     ],
   },
@@ -282,6 +282,12 @@ const emailBrands = [
         description:
           "An abandoned-cart email concept designed to bring shoppers back to their unfinished purchases.",
         imgSrc: "/email-imgs/adidas-still-thinking-it-over.webp",
+      },
+      {
+        title: "The Wait is Over",
+        description:
+          "A back-in-stock email concept inspired by adidas Originals, designed to reintroduce a returning product through bold product imagery, concise feature highlights, and clear calls to action.",
+        imgSrc: "/email-imgs/adidas-the-wait-is-over.webp",
       },
     ],
   },
