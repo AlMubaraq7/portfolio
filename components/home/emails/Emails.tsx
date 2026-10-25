@@ -23,7 +23,7 @@ export const Emails = () => {
 const emailBrands = [
   {
     brand: "Sephora",
-    coverImg: "/email-imgs/sephora-cover.png",
+    coverImg: "/email-imgs/sephora-cover.webp",
     description:
       "A set of campaign emails for Sephora — product launches and seasonal promotions designed for high engagement.",
     link: "",
@@ -68,7 +68,7 @@ const emailBrands = [
   },
   {
     brand: "Nike",
-    coverImg: "/email-imgs/nike-cover.png",
+    coverImg: "/email-imgs/nike-cover.webp",
     description:
       "Newsletter and promotional emails for Nike focused on clean layouts and strong calls to action.",
     link: "",
@@ -125,7 +125,7 @@ const emailBrands = [
   },
   {
     brand: "Apple",
-    coverImg: "/email-imgs/apple-cover.png",
+    coverImg: "/email-imgs/apple-cover.webp",
     description:
       "Product launches and feature-focused emails for Apple built around minimal layouts, premium product imagery, and clear, focused calls to action.",
     link: "",
@@ -164,7 +164,7 @@ const emailBrands = [
   },
   {
     brand: "Airbnb",
-    coverImg: "/email-imgs/airbnb-cover.png",
+    coverImg: "/email-imgs/airbnb-cover.webp",
     description:
       "Travel inspiration and experience-focused emails built around immersive destination photography, welcoming copy, and simple calls to action that inspire people to discover new places.",
     link: "",
@@ -288,6 +288,21 @@ const emailBrands = [
         description:
           "A back-in-stock email concept inspired by adidas Originals, designed to reintroduce a returning product through bold product imagery, concise feature highlights, and clear calls to action.",
         imgSrc: "/email-imgs/adidas-the-wait-is-over.webp",
+      },
+    ],
+  },
+  {
+    brand: "Starbucks",
+    coverImg: "/email-imgs/starbucks-cover.webp",
+    description:
+      "Food and beverage emails focused on seasonal drinks, new product launches, coffee discovery, and customer loyalty. Each campaign combines appetizing product photography, rich coffee-inspired colours, and clear calls to action to showcase signature beverages, highlight seasonal favourites, and encourage customers to explore the Starbucks experience.",
+    link: "",
+    campaigns: [
+      {
+        title: "The Taste of the Season",
+        description:
+          "A seasonal promotional email concept inspired by Starbucks' fall beverage collection.",
+        imgSrc: "/email-imgs/starbucks-the-taste-of-the-season.webp",
       },
     ],
   },
