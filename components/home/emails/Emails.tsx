@@ -304,6 +304,12 @@ const emailBrands = [
           "A seasonal promotional email concept inspired by Starbucks' fall beverage collection.",
         imgSrc: "/email-imgs/starbucks-the-taste-of-the-season.webp",
       },
+      {
+        title: "Meet the Aerocano",
+        description:
+          "A new-product launch email concept inspired by Starbucks' Aerocano range.",
+        imgSrc: "/email-imgs/starbucks-meet-the-aerocano.webp",
+      },
     ],
   },
 ];
