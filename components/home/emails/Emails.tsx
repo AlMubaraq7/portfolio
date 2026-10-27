@@ -310,6 +310,12 @@ const emailBrands = [
           "A new-product launch email concept inspired by Starbucks' Aerocano range.",
         imgSrc: "/email-imgs/starbucks-meet-the-aerocano.webp",
       },
+      {
+        title: "Your Coffee, Your Way",
+        description:
+          "A product-discovery email concept inspired by Starbucks, designed to help customers explore different beverage categories, from cold brew and matcha to chai.",
+        imgSrc: "/email-imgs/starbucks-your-coffee-your-way.webp",
+      },
     ],
   },
 ];
