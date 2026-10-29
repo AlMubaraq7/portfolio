@@ -1,5 +1,4 @@
 import React from "react";
-import { SideBar } from "../nav/SideBar";
 import { Hero } from "./hero/Hero";
 import styles from "./home.module.scss";
 import { Heading } from "../nav/Heading";
@@ -13,7 +12,6 @@ export const Home = () => {
   return (
     <>
       <div className={styles.home}>
-        <SideBar />
         <main id="main">
           <Heading />
           <Hero />

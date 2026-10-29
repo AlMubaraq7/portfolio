@@ -1,6 +1,6 @@
 import styles from "./emailmodal.module.scss";
 import { useEffect } from "react";
-import ReactDOM from "react-dom";
+import { createPortal } from "react-dom";
 import { motion } from "framer-motion";
 import Link from "next/link";
 import { AiOutlineExport, AiFillStar } from "react-icons/ai";
@@ -32,13 +32,14 @@ export const EmailModal = ({
   const count = campaigns.length;
 
   useEffect(() => {
-    const body = document.querySelector("body");
+    if (!isOpen) return;
 
-    if (isOpen) {
-      body!.style.overflowY = "hidden";
-    } else {
-      body!.style.overflowY = "scroll";
-    }
+    const previousOverflow = document.body.style.overflowY;
+    document.body.style.overflowY = "hidden";
+
+    return () => {
+      document.body.style.overflowY = previousOverflow;
+    };
   }, [isOpen]);
 
   useEffect(() => {
@@ -172,8 +173,7 @@ export const EmailModal = ({
     </div>
   );
 
-  if (!isOpen) return <></>;
+  if (!isOpen || typeof document === "undefined") return null;
 
-  // @ts-ignore
-  return ReactDOM.createPortal(content, document.getElementById("root"));
+  return createPortal(content, document.body);
 };

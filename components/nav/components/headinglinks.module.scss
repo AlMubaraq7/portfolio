@@ -1,9 +1,12 @@
 .links {
   display: flex;
+  align-items: center;
   gap: 1.6rem;
-  padding-top: 10px;
 
   a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     opacity: 0.5;
     position: relative;
     z-index: 20;
@@ -12,5 +15,13 @@
   a:hover {
     color: var(--brand);
     opacity: 1;
+  }
+
+  @media (max-width: 520px) {
+    gap: 1rem;
+  }
+
+  @media (max-width: 420px) {
+    gap: 0.6rem;
   }
 }

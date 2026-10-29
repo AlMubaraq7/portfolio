@@ -1,27 +1,96 @@
 .themeToggle {
   flex-shrink: 0;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
 
+  width: 8.8rem;
+  height: 4.8rem;
+  padding: 0.5rem;
+
+  border: 1px solid var(--border-subtle);
+  border-radius: 999px;
+
+  background: color-mix(in srgb, var(--background-light) 78%, transparent);
+  color: var(--muted);
+  font-size: 2.5rem;
+  overflow: hidden;
+  box-shadow:
+    inset 0 0.1rem 0 rgba(255, 255, 255, 0.1),
+    inset 0 -0.1rem 0 rgba(0, 0, 0, 0.16),
+    0 0.5rem 1.6rem var(--shadow);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+
+  &:hover {
+    border-color: var(--border);
+  }
+
+  @media (max-width: 420px) {
+    width: 8.8rem;
+    height: 4.8rem;
+    padding: 0.4rem;
+  }
+}
+
+.activePanel {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  border: 1px solid var(--border-subtle);
+  border-radius: 20px;
+  background: color-mix(in srgb, var(--text) 11%, var(--background-light));
+  box-shadow:
+    inset 0 0.1rem 0 rgba(255, 255, 255, 0.16),
+    inset 0 -0.1rem 0 rgba(0, 0, 0, 0.12),
+    0 0.3rem 1rem var(--shadow);
+}
+
+.modeOption {
+  position: relative;
+  isolation: isolate;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+  min-height: 0;
+  transition: color 0.22s ease;
+}
+
+.active {
+  color: var(--text);
+}
+
+.icon {
+  position: relative;
+  z-index: 1;
   display: flex;
   align-items: center;
   justify-content: center;
 
-  width: 4.2rem;
-  height: 4.2rem;
-
-  border: 1px solid var(--border);
-  border-radius: 999px;
-
-  background: transparent;
-  color: var(--text);
-  font-size: var(--text-md);
-
-  opacity: 0.7;
-  cursor: pointer;
-  transition: 0.2s all;
-
-  &:hover {
-    opacity: 1;
-    color: var(--brand);
-    border-color: var(--brand);
+  svg {
+    width: 2rem;
+    height: 2rem;
   }
+}
+
+.sparkles {
+  position: absolute;
+  top: 0.45rem;
+  right: 0.3rem;
+  width: 1.35rem;
+  height: 1.35rem;
+  color: currentColor;
+  z-index: 2;
+  pointer-events: none;
 }

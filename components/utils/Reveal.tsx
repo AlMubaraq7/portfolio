@@ -4,9 +4,16 @@ import { motion, useInView, useAnimation } from "framer-motion";
 interface Props {
   children: JSX.Element;
   width?: "fit-content" | "100%";
+  overflow?: "hidden" | "visible";
+  zIndex?: number;
 }
 
-export const Reveal = ({ children, width = "fit-content" }: Props) => {
+export const Reveal = ({
+  children,
+  width = "fit-content",
+  overflow = "hidden",
+  zIndex,
+}: Props) => {
   const mainControls = useAnimation();
   const slideControls = useAnimation();
 
@@ -24,7 +31,7 @@ export const Reveal = ({ children, width = "fit-content" }: Props) => {
   }, [isInView, mainControls, slideControls]);
 
   return (
-    <div ref={ref} style={{ position: "relative", width, overflow: "hidden" }}>
+    <div ref={ref} style={{ position: "relative", width, overflow, zIndex }}>
       <motion.div
         variants={{
           hidden: { opacity: 0, y: 75 },

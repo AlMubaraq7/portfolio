@@ -1,21 +1,32 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:wght@500;600&family=Space+Grotesk:wght@300..700&display=swap");
 :root {
   font-size: 62.5%;
 
-  --background: rgb(17, 17, 17);
-  --bg-opaque: rgba(17, 17, 17, 0.25);
-  --background-light: rgb(35, 35, 35);
-  --background-dark: rgb(8, 8, 8);
+  --black: #080808;
+  --white: #f7f7f7;
+  --brick-red: #b82828;
+  --straw-gold: #e9d758;
+  --pine-blue: #297373;
+  --alabaster-grey: #e6e6e6;
+  --material-dark: #121212;
 
-  --text: rgb(235, 236, 243);
-  --brand: rgb(153, 33, 33);
+  --background: var(--black);
+  --bg-opaque: rgba(8, 8, 8, 0.25);
+  --background-light: var(--material-dark);
+  --background-dark: var(--black);
+
+  --text: var(--white);
+  --brand: var(--brick-red);
+  --hero-name-bg: var(--alabaster-grey);
+  --hero-name-text: var(--material-dark);
+  --hero-neutral-bg: var(--material-dark);
+  --hero-neutral-text: var(--alabaster-grey);
 
   /* semantic tokens — adapt per theme (overridden under [data-theme="light"]) */
-  --muted: rgba(235, 236, 243, 0.68);
-  --border: rgba(235, 236, 243, 0.3);
-  --border-subtle: rgba(235, 236, 243, 0.09);
-  --grid-line: rgba(235, 236, 243, 0.06);
-  --btn-bg: rgba(235, 236, 243, 0.08);
+  --muted: rgba(247, 247, 247, 0.68);
+  --border: rgba(247, 247, 247, 0.3);
+  --border-subtle: rgba(247, 247, 247, 0.09);
+  --grid-line: rgba(247, 247, 247, 0.06);
+  --btn-bg: rgba(247, 247, 247, 0.08);
   --shadow: rgba(0, 0, 0, 0.45);
 
   --text-xs: 1.6rem;
@@ -30,18 +41,22 @@
    applied pre-paint by the inline script in _document.tsx). Brand red is
    constant; only surfaces and text invert. */
 :root[data-theme="light"] {
-  --background: rgb(244, 243, 241);
-  --bg-opaque: rgba(244, 243, 241, 0.55);
-  --background-light: rgb(255, 255, 255);
-  --background-dark: rgb(233, 231, 227);
+  --background: var(--white);
+  --bg-opaque: rgba(247, 247, 247, 0.55);
+  --background-light: var(--alabaster-grey);
+  --background-dark: var(--white);
 
-  --text: rgb(26, 26, 28);
+  --text: var(--material-dark);
+  --hero-name-bg: var(--material-dark);
+  --hero-name-text: var(--white);
+  --hero-neutral-bg: var(--alabaster-grey);
+  --hero-neutral-text: var(--material-dark);
 
-  --muted: rgba(26, 26, 28, 0.62);
-  --border: rgba(26, 26, 28, 0.14);
-  --border-subtle: rgba(26, 26, 28, 0.09);
-  --grid-line: rgba(26, 26, 28, 0.05);
-  --btn-bg: rgba(26, 26, 28, 0.05);
+  --muted: rgba(18, 18, 18, 0.62);
+  --border: rgba(18, 18, 18, 0.14);
+  --border-subtle: rgba(18, 18, 18, 0.09);
+  --grid-line: rgba(18, 18, 18, 0.05);
+  --btn-bg: rgba(18, 18, 18, 0.05);
   --shadow: rgba(0, 0, 0, 0.14);
 }
 
@@ -59,6 +74,7 @@
 html,
 body {
   max-width: 100vw;
+  overflow-x: clip;
   scroll-behavior: smooth;
   font-size: var(--text-sm);
 }
@@ -66,6 +82,7 @@ body {
 body {
   color: var(--text);
   background: var(--background);
+  font-family: "Schibsted Grotesk", sans-serif;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -97,5 +114,5 @@ a {
 }
 
 button {
-  font-family: "Space Grotesk", serif !important;
+  font-family: "Schibsted Grotesk", sans-serif !important;
 }
