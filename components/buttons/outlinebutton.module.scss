@@ -1,50 +1,69 @@
 .outlineButton {
-  outline: none;
-  border: none;
-  cursor: pointer;
-  padding: 1rem 2rem;
-  border: 1px solid var(--brand);
-  background: transparent;
-  color: var(--brand);
-  font-size: var(--text-sm);
-  border-radius: 4px;
   position: relative;
+  isolation: isolate;
   z-index: 20;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 4.8rem;
+  padding: 0 2rem;
+  border: 1px solid var(--border-subtle);
+  border-radius: 999px;
+  outline: none;
+
+  background: color-mix(in srgb, var(--background-light) 78%, transparent);
+  color: var(--text);
+  font-family: "Malinton", sans-serif !important;
+  font-size: 1.4rem;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+
   overflow: hidden;
-  transition: 0.2s color;
+  cursor: pointer;
+  box-shadow:
+    inset 0 0.1rem 0 rgba(255, 255, 255, 0.12),
+    0 0.8rem 2.4rem var(--shadow);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease;
+
   svg {
     display: none;
   }
 
+  &::before {
+    content: "";
+    position: absolute;
+    inset: 0.5rem;
+    z-index: -1;
+    border: 1px solid var(--border-subtle);
+    border-radius: inherit;
+    background: color-mix(in srgb, var(--text) 12%, var(--background-light));
+    box-shadow:
+      inset 0 0.1rem 0 rgba(255, 255, 255, 0.16),
+      0 0.4rem 1.4rem var(--shadow);
+  }
+
+  &:hover {
+    transform: translateY(-2px);
+    border-color: var(--border);
+  }
+
   @media (max-width: 420px) {
+    width: 4.4rem;
+    height: 4.4rem;
     font-size: 0;
-    padding: 0.5rem 0.5rem;
+    padding: 0;
+
     svg {
       display: block;
+      width: 2rem;
+      height: 2rem;
     }
   }
-}
-
-.outlineButton::before {
-  content: "";
-  position: absolute;
-  z-index: -1;
-  background: var(--brand);
-
-  height: 100%;
-  width: 100%;
-
-  left: -100%;
-  top: -100%;
-
-  transition: 0.2s left, 0.2s top;
-}
-
-.outlineButton:hover {
-  color: var(--text);
-}
-
-.outlineButton:hover::before {
-  left: 0;
-  top: 0;
 }

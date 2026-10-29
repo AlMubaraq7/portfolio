@@ -1,25 +1,20 @@
 import { StandardButton } from "@/components/buttons/StandardButton";
 import { Reveal } from "@/components/utils/Reveal";
-import { Counter } from "@/components/utils/Counter";
 import styles from "./hero.module.scss";
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 
 // Quick, honest snapshot — tweak these numbers as the work grows.
-const stats = [
-  { value: 1, suffix: "+", label: "Years Experience" },
-  { value: 4, suffix: "+", label: "Web Projects" },
-  { value: 6, suffix: "+", label: "Email Campaigns" },
-];
-
-const heroTitles = [
-  "Hey, I'm Mubaraq",
-  "Email Designer",
-  "Frontend Engineer",
-];
+const heroTitles = ["Hey, I'm Mubaraq", "Email Designer", "Frontend Engineer"];
 
 export const Hero = () => {
   const [titleIndex, setTitleIndex] = useState(0);
+  const [titleSize, setTitleSize] = useState<{
+    width: number;
+    height: number;
+  } | null>(null);
+  const titleRef = useRef<HTMLSpanElement>(null);
+  const titleWrapRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const titleInterval = setInterval(() => {
@@ -29,12 +24,45 @@ export const Hero = () => {
     return () => clearInterval(titleInterval);
   }, []);
 
+  useLayoutEffect(() => {
+    const title = titleRef.current;
+    const wrapper = titleWrapRef.current;
+    if (!title || !wrapper) return;
+    let active = true;
+
+    const measure = () => {
+      if (!active) return;
+      const titleRect = title.getBoundingClientRect();
+      const wrapperStyles = window.getComputedStyle(wrapper);
+      const horizontalPadding =
+        parseFloat(wrapperStyles.paddingLeft) +
+        parseFloat(wrapperStyles.paddingRight);
+      const verticalPadding =
+        parseFloat(wrapperStyles.paddingTop) +
+        parseFloat(wrapperStyles.paddingBottom);
+
+      setTitleSize({
+        width: Math.ceil(titleRect.width + horizontalPadding),
+        height: Math.ceil(titleRect.height + verticalPadding),
+      });
+    };
+
+    measure();
+    window.addEventListener("resize", measure);
+    document.fonts?.ready.then(measure);
+
+    return () => {
+      active = false;
+      window.removeEventListener("resize", measure);
+    };
+  }, [titleIndex]);
+
   return (
     <section className={`section-wrapper ${styles.hero}`}>
       <div className={styles.copyWrapper}>
         <Reveal width="100%">
           <motion.div
-            layout="size"
+            ref={titleWrapRef}
             className={`${styles.nameWrap} ${
               titleIndex === 1
                 ? styles.emailTitle
@@ -42,28 +70,42 @@ export const Hero = () => {
                   ? styles.frontendTitle
                   : ""
             }`}
+            animate={
+              titleSize
+                ? { width: titleSize.width, height: titleSize.height }
+                : undefined
+            }
             transition={{
-              layout: { type: "spring", stiffness: 260, damping: 24 },
+              duration: 0.42,
+              ease: [0.22, 1, 0.36, 1],
             }}
           >
             <h1 className={styles.title}>
-              <AnimatePresence initial={false} mode="popLayout">
+              <AnimatePresence initial={false} mode="sync">
                 <motion.span
-                  layout
+                  className={styles.titleLayer}
                   key={heroTitles[titleIndex]}
-                  initial={{ opacity: 0, y: 18 }}
+                  initial={{ opacity: 0, y: 12 }}
                   animate={{ opacity: 1, y: 0 }}
-                  exit={{ opacity: 0, y: -18 }}
-                  transition={{ duration: 0.3, ease: "easeOut" }}
+                  exit={{ opacity: 0, y: -12 }}
+                  transition={{
+                    duration: 0.42,
+                    ease: [0.22, 1, 0.36, 1],
+                  }}
                 >
-                  {heroTitles[titleIndex]}
+                  <span ref={titleRef} className={styles.titleText}>
+                    {heroTitles[titleIndex]}
+                  </span>
                 </motion.span>
               </AnimatePresence>
             </h1>
           </motion.div>
         </Reveal>
         <Reveal width="100%" overflow="visible" zIndex={30}>
-          <h2 className={styles.statement} aria-label="I build websites and I design emails.">
+          <h2
+            className={styles.statement}
+            aria-label="I build websites and I design emails."
+          >
             <span className={styles.phraseRow}>
               <motion.span
                 className={`${styles.phrase} ${styles.build}`}
@@ -124,32 +166,15 @@ export const Hero = () => {
         </Reveal>
         <Reveal>
           <p className={styles.aboutCopy}>
-            I build websites and design emails &mdash; two crafts that both come
-            down to sweating the small stuff. On the engineering side I turn
-            designs into fast, responsive interfaces; on the email side I build
-            campaigns that render cleanly across every inbox and actually earn
-            the click.
+            Two crafts that both come down to sweating the small stuff. On the
+            engineering side I turn designs into fast, responsive interfaces; on
+            the email side I build campaigns that render cleanly across every
+            inbox and actually earn the click.
           </p>
         </Reveal>
         <Reveal>
-          <ul className={styles.statsRow}>
-            {stats.map((stat) => (
-              <li key={stat.label} className={styles.stat}>
-                <Counter
-                  className={styles.statValue}
-                  to={stat.value}
-                  suffix={stat.suffix}
-                />
-                <span className={styles.statLabel}>{stat.label}</span>
-              </li>
-            ))}
-          </ul>
-        </Reveal>
-        <Reveal>
           <StandardButton
-            onClick={() =>
-              document.getElementById("contact")?.scrollIntoView()
-            }
+            onClick={() => document.getElementById("contact")?.scrollIntoView()}
           >
             Contact me
           </StandardButton>

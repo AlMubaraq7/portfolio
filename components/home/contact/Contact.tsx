@@ -1,13 +1,13 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { Reveal } from "@/components/utils/Reveal";
+import { StandardButton } from "@/components/buttons/StandardButton";
 import styles from "./contact.module.scss";
-import { AiFillMail } from "react-icons/ai";
 import { MdKeyboardArrowDown } from "react-icons/md";
 import Link from "next/link";
 
 export const Contact = () => {
-  const [open, setOpen] = useState(true);
+  const [open, setOpen] = useState(false);
 
   return (
     <section className="section-wrapper" id="contact">
@@ -58,12 +58,15 @@ export const Contact = () => {
                 </p>
               </Reveal>
               <Reveal width="100%">
-                <Link href="mailto:momohmubaraq@gmail.com">
-                  <div className={styles.contactEmail}>
-                    <AiFillMail size="2.4rem" />
-                    <span>Send Email</span>
-                  </div>
-                </Link>
+                <div className={styles.emailButton}>
+                  <StandardButton
+                    onClick={() => {
+                      window.location.href = "mailto:momohmubaraq@gmail.com";
+                    }}
+                  >
+                    Send me an email
+                  </StandardButton>
+                </div>
               </Reveal>
             </motion.div>
           )}

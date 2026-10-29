@@ -14,7 +14,7 @@ export const CollapsibleSection = ({
   id,
   title,
   dir = "r",
-  defaultOpen = true,
+  defaultOpen = false,
   children,
 }: Props) => {
   const [open, setOpen] = useState(defaultOpen);

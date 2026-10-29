@@ -4,7 +4,7 @@ import styles from "./projects.module.scss";
 
 export const Projects = () => {
   return (
-    <CollapsibleSection id="software" title="Software Engineering" dir="r">
+    <CollapsibleSection id="software" title="Software" dir="r">
       <div className={styles.projects}>
         {projects.map((project) => {
           return <Project key={project.title} {...project} />;

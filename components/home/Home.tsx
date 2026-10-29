@@ -2,7 +2,6 @@ import React from "react";
 import { Hero } from "./hero/Hero";
 import styles from "./home.module.scss";
 import { Heading } from "../nav/Heading";
-import { About } from "./about/About";
 import { Projects } from "./projects/Projects";
 import { Emails } from "./emails/Emails";
 import { Experience } from "./experience/Experience";
@@ -15,7 +14,6 @@ export const Home = () => {
         <main id="main">
           <Heading />
           <Hero />
-          <About />
           <Projects />
           <Emails />
           <Experience />

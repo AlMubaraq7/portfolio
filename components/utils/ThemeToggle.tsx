@@ -45,7 +45,7 @@ export const ThemeToggle = () => {
           <motion.span
             className={styles.activePanel}
             layoutId="theme-active-panel"
-            transition={{ type: "spring", stiffness: 420, damping: 32 }}
+            transition={{ type: "spring", stiffness: 500, damping: 38 }}
           />
         )}
         <motion.span
@@ -92,7 +92,7 @@ export const ThemeToggle = () => {
           <motion.span
             className={styles.activePanel}
             layoutId="theme-active-panel"
-            transition={{ type: "spring", stiffness: 420, damping: 32 }}
+            transition={{ type: "spring", stiffness: 500, damping: 38 }}
           />
         )}
         <motion.span

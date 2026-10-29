@@ -1,25 +1,24 @@
 import { useEffect, useState } from "react";
 import styles from "./heading.module.scss";
 import { ThemeToggle } from "@/components/utils/ThemeToggle";
-import { MyLinks } from "./components/MyLinks";
 import { OutlineButton } from "../buttons/OutlineButton";
 import { motion } from "framer-motion";
 
 const navItems = [
-  { label: "Work", href: "#software", section: "work" },
-  { label: "About", href: "#about", section: "about" },
+  { label: "Software", href: "#software", section: "software" },
+  { label: "Design", href: "#email-design", section: "design" },
+  { label: "Experience", href: "#experience", section: "experience" },
   { label: "Contact", href: "#contact", section: "contact" },
 ];
 
 export const Heading = () => {
-  const [selected, setSelected] = useState("work");
+  const [selected, setSelected] = useState("software");
 
   useEffect(() => {
     const sectionMap: Record<string, string> = {
-      about: "about",
-      software: "work",
-      "email-design": "work",
-      experience: "work",
+      software: "software",
+      "email-design": "design",
+      experience: "experience",
       contact: "contact",
     };
     const sections = Object.keys(sectionMap)
@@ -46,7 +45,7 @@ export const Heading = () => {
         className={styles.brand}
         href="#main"
         aria-label="Back to the top"
-        onClick={() => setSelected("work")}
+        onClick={() => setSelected("software")}
       >
         <span>M</span>
         <span className={styles.brandDot}>.</span>
@@ -57,6 +56,7 @@ export const Heading = () => {
           <a
             key={item.section}
             href={item.href}
+            data-section={item.section}
             className={selected === item.section ? styles.selected : ""}
             aria-current={selected === item.section ? "page" : undefined}
             onClick={() => setSelected(item.section)}
@@ -74,8 +74,9 @@ export const Heading = () => {
       </nav>
 
       <div className={styles.headingActions}>
-        <MyLinks />
-        <OutlineButton onClick={() => window.open("/Resume.pdf")}>My resume</OutlineButton>
+        <OutlineButton onClick={() => window.open("/Resume.pdf")}>
+          My resume
+        </OutlineButton>
         <ThemeToggle />
       </div>
     </header>

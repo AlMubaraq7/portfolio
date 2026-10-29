@@ -1,8 +1,80 @@
+@font-face {
+  font-family: "Malinton";
+  src: url("/font/malinton/MalintonTrialVersion-Thin.otf") format("opentype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Malinton";
+  src: url("/font/malinton/MalintonTrialVersion-ExtLt.otf") format("opentype");
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Malinton";
+  src: url("/font/malinton/MalintonTrialVersion-Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Malinton";
+  src: url("/font/malinton/MalintonTrialVersion-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Malinton";
+  src: url("/font/malinton/MalintonTrialVersion-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Malinton";
+  src: url("/font/malinton/MalintonTrialVersion-SemiBold.otf") format("opentype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Malinton";
+  src: url("/font/malinton/MalintonTrialVersion-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Malinton";
+  src: url("/font/malinton/MalintonTrialVersion-ExtBd.otf") format("opentype");
+  font-weight: 800;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Malinton";
+  src: url("/font/malinton/MalintonTrialVersion-Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   font-size: 62.5%;
 
   --black: #080808;
-  --white: #f7f7f7;
+  --white: #f9f6f0;
   --brick-red: #b82828;
   --straw-gold: #e9d758;
   --pine-blue: #297373;
@@ -20,13 +92,17 @@
   --hero-name-text: var(--material-dark);
   --hero-neutral-bg: var(--material-dark);
   --hero-neutral-text: var(--alabaster-grey);
+  --cta-fill: var(--white);
+  --cta-text: var(--material-dark);
+  --cta-outline: var(--white);
+  --cta-inner-border: var(--material-dark);
 
   /* semantic tokens — adapt per theme (overridden under [data-theme="light"]) */
-  --muted: rgba(247, 247, 247, 0.68);
-  --border: rgba(247, 247, 247, 0.3);
-  --border-subtle: rgba(247, 247, 247, 0.09);
-  --grid-line: rgba(247, 247, 247, 0.06);
-  --btn-bg: rgba(247, 247, 247, 0.08);
+  --muted: rgba(249, 246, 240, 0.68);
+  --border: rgba(249, 246, 240, 0.3);
+  --border-subtle: rgba(249, 246, 240, 0.09);
+  --grid-line: rgba(249, 246, 240, 0.06);
+  --btn-bg: rgba(249, 246, 240, 0.08);
   --shadow: rgba(0, 0, 0, 0.45);
 
   --text-xs: 1.6rem;
@@ -51,6 +127,10 @@
   --hero-name-text: var(--white);
   --hero-neutral-bg: var(--alabaster-grey);
   --hero-neutral-text: var(--material-dark);
+  --cta-fill: var(--material-dark);
+  --cta-text: var(--white);
+  --cta-outline: var(--material-dark);
+  --cta-inner-border: var(--white);
 
   --muted: rgba(18, 18, 18, 0.62);
   --border: rgba(18, 18, 18, 0.14);
@@ -82,8 +162,17 @@ body {
 body {
   color: var(--text);
   background: var(--background);
-  font-family: "Schibsted Grotesk", sans-serif;
+  font-family: "Source Sans 3", sans-serif;
   transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Malinton", sans-serif;
 }
 
 a {
@@ -100,9 +189,17 @@ a {
   overflow: hidden;
 }
 
+#software {
+  padding-top: 4.8rem;
+}
+
 @media (max-width: 768px) {
   .section-wrapper {
     padding: 7.2rem 2.4rem;
+  }
+
+  #software {
+    padding-top: 3.2rem;
   }
 }
 
@@ -114,5 +211,5 @@ a {
 }
 
 button {
-  font-family: "Schibsted Grotesk", sans-serif !important;
+  font-family: "Source Sans 3", sans-serif !important;
 }
