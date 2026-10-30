@@ -316,6 +316,12 @@ const emailBrands = [
           "A product-discovery email concept inspired by Starbucks, designed to help customers explore different beverage categories, from cold brew and matcha to chai.",
         imgSrc: "/email-imgs/starbucks-your-coffee-your-way.webp",
       },
+      {
+        title: "Make Every Star Count",
+        description:
+          "A loyalty-focused email concept inspired by Starbucks Rewards, highlighting the programme's Stars system, redemption options, and member benefits",
+        imgSrc: "/email-imgs/starbucks-make-every-star-count.webp",
+      },
     ],
   },
 ];
