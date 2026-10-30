@@ -21,52 +21,6 @@
   }
 }
 
-.gridBg {
-  position: absolute;
-  inset: 0;
-  z-index: 0;
-  pointer-events: none;
-
-  background-image:
-    linear-gradient(to right, var(--grid-line) 1px, transparent 1px),
-    linear-gradient(to bottom, var(--grid-line) 1px, transparent 1px);
-  background-size: 2.8rem 2.8rem;
-
-  // fade the grid toward the edges so it reads as a subtle backdrop
-  -webkit-mask-image: radial-gradient(
-    ellipse 70% 70% at 50% 45%,
-    #000 45%,
-    transparent 100%
-  );
-  mask-image: radial-gradient(
-    ellipse 70% 70% at 50% 45%,
-    #000 45%,
-    transparent 100%
-  );
-}
-
-// soft ambient brand glow that trails the cursor
-.spotlight {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  pointer-events: none;
-}
-
-// a brighter, brand-tinted copy of the grid, revealed only around the cursor
-// via an inline radial mask — makes the grid lines "light up" as you move
-.gridGlow {
-  position: absolute;
-  inset: 0;
-  z-index: 1;
-  pointer-events: none;
-
-  background-image:
-    linear-gradient(to right, rgba(184, 40, 40, 0.55) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(184, 40, 40, 0.55) 1px, transparent 1px);
-  background-size: 2.8rem 2.8rem;
-}
-
 .copyWrapper {
   position: relative;
   z-index: 10;
@@ -135,7 +89,6 @@
   text-align: center;
   white-space: nowrap;
   transition: color 0.42s cubic-bezier(0.22, 1, 0.36, 1);
-
 }
 
 .titleLayer {

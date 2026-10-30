@@ -40,7 +40,8 @@
 
 @font-face {
   font-family: "Malinton";
-  src: url("/font/malinton/MalintonTrialVersion-SemiBold.otf") format("opentype");
+  src: url("/font/malinton/MalintonTrialVersion-SemiBold.otf")
+    format("opentype");
   font-weight: 600;
   font-style: normal;
   font-display: swap;
@@ -155,16 +156,44 @@ html,
 body {
   max-width: 100vw;
   overflow-x: clip;
-  scroll-behavior: smooth;
   font-size: var(--text-sm);
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(184, 40, 40, 0.55) transparent;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(184, 40, 40, 0.48);
+  background-clip: padding-box;
+  border: 2px solid transparent;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(184, 40, 40, 0.7);
+  background-clip: padding-box;
 }
 
 body {
   color: var(--text);
   background: var(--background);
-  font-family: "Source Sans 3", sans-serif;
-  font-weight: 400;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  font-family: "Jost", sans-serif;
+  font-weight: 300;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
 }
 
 h1,
@@ -212,5 +241,5 @@ a {
 }
 
 button {
-  font-family: "Source Sans 3", sans-serif !important;
+  font-family: "Jost", sans-serif !important;
 }
