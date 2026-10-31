@@ -322,6 +322,13 @@ const emailBrands = [
           "A loyalty-focused email concept inspired by Starbucks Rewards, highlighting the programme's Stars system, redemption options, and member benefits",
         imgSrc: "/email-imgs/starbucks-make-every-star-count.webp",
       },
+      {
+        title: "A Little Something for Your Morning",
+        description:
+          "A food and beverage cross-sell email concept inspired by Starbucks' breakfast and bakery menu. The design highlights selected food favourites through appetizing product photography",
+        imgSrc:
+          "/email-imgs/starbucks-a-little-something-for-your-morning.webp",
+      },
     ],
   },
 ];
