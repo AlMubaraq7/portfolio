@@ -329,6 +329,12 @@ const emailBrands = [
         imgSrc:
           "/email-imgs/starbucks-a-little-something-for-your-morning.webp",
       },
+      {
+        title: "The Perfect Gift Starts Here",
+        description:
+          "A gift-focused email campaign concept inspired by Starbucks' digital gift cards. The design combines cheerful card artwork, warm brand colours, and simple visual storytelling to showcase different gifting occasions and make sending a Starbucks gift feel effortless.",
+        imgSrc: "/email-imgs/starbucks-the-perfect-gift-starts-here.webp",
+      },
     ],
   },
 ];
