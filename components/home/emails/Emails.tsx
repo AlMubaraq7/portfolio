@@ -337,4 +337,37 @@ const emailBrands = [
       },
     ],
   },
+  {
+    brand: "LEGO",
+    coverImg: "/email-imgs/lego-cover.webp",
+    description:
+      "Creative and lifestyle emails focused on new building sets, product launches, themed collections, and exclusive promotions. Each campaign combines playful product photography, bold colours, and engaging visual storytelling to showcase LEGO sets, inspire creativity, and encourage customers to discover their next build.",
+    link: "",
+    campaigns: [
+      {
+        title: "Something New Is Coming",
+        description:
+          "A teaser email campaign building anticipation for the LEGO Pokémon Arcanine set. The design uses bold visuals, subtle product hints, and curiosity-driven messaging to create excitement ahead of the official reveal.",
+        imgSrc: "/email-imgs/lego-something-new-is-coming.webp",
+      },
+      {
+        title: "Meet LEGO Arcanine",
+        description:
+          "A product reveal email introducing the LEGO Pokémon Arcanine set. The design puts the build front and centre, combining striking product imagery, bold typography, and playful Pokémon-inspired elements to make the announcement stand out.",
+        imgSrc: "/email-imgs/lego-meet-lego-arcanine.webp",
+      },
+      {
+        title: "Built for Pokémon Fans",
+        description:
+          "A product-focused email highlighting the LEGO Pokémon Arcanine set and its defining features. The design combines detailed product photography, informative callouts, and engaging visual elements to showcase the build and connect with Pokémon fans.",
+        imgSrc: "/email-imgs/lego-built-for-pokemon-fans.webp",
+      },
+      {
+        title: "Fresh Builds have Arrived",
+        description:
+          "A new-arrivals email campaign concept inspired by LEGO's latest building sets. The design combines playful brand elements, bold product imagery, and contrasting visual sections to introduce new releases and encourage customers to explore different building experiences.",
+        imgSrc: "/email-imgs/lego-fresh-builds-have-arrived.webp",
+      },
+    ],
+  },
 ];
